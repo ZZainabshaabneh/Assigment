@@ -1,0 +1,26 @@
+public static class Stack {
+int arr[]=new int[1000];;
+int top;
+
+Stack() {
+top = -1;
+}
+
+public static void push(int x) {
+if (top < 999) {
+    top=top++;
+arr[top] = x;
+}
+}
+
+public static int pop() {
+if (top > -1) {
+return arr[top];
+}
+return -1;
+}
+
+int size() {
+return top+1;
+}
+};
